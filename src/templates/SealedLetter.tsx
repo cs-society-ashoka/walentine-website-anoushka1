@@ -17,7 +17,7 @@ const SealedLetter = () => {
   const holdTimer = useRef(null);
   const vibrationControls = useAnimation();
   
-  const words = config.message.split(" ");
+  const words = config.message2.split(" ");
 
   // Typewriter effect logic
   useEffect(() => {
@@ -112,7 +112,7 @@ const SealedLetter = () => {
               The Sealed Letter
             </h1>
             <p className="mb-8 text-center italic" style={{ color: "#8b6914" }}>
-              {config.recipientName}, a message awaits you.
+              {config.recipient2Name}, a message awaits you.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -313,7 +313,7 @@ const SealedLetter = () => {
 
               <div className="relative z-10">
                 <p className="mb-6 text-sm italic" style={{ color: "#8b6914" }}>
-                  Dearest {config.recipientName},
+                  Dearest {config.recipient2Name},
                 </p>
 
                 <p
